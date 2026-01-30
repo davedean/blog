@@ -1,0 +1,12 @@
+title: Dave's Blog
+description: Thoughts on agents, ML, and building things
+baseurl: "/blog"
+url: "https://davedean.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing
+exclude:
+  - README.md
