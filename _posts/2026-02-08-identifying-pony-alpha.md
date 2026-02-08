@@ -19,7 +19,7 @@ I have seen posts online that GLM-5 would be coming in Feb, so I wanted to confi
 
 ## Likely Models
 
-Given that OpenAI just dropped GPT-5.3-codex and Anthropic dropped Opus 4.6, its unlikely to be another model from them. GLM-5 has been mentioned to be releasing in February, so that needs to be considered as an option. There's also Qwen and Deepseek who haven't released something "big" in a little while. 
+Given that OpenAI just dropped GPT-5.3-codex and Anthropic dropped Opus 4.6, it's unlikely to be another model from them. GLM-5 has been mentioned to be releasing in February, so that needs to be considered as an option. There's also Qwen and Deepseek who haven't released something "big" in a little while. 
 
 One thing that model providers can't hide easily, and don't tend to change frequently is their tokenizer. So I resolved to quickly check if the tokenizer used by Pony Alpha matched any of the usual suspects.
 
@@ -151,4 +151,4 @@ With a high degree of confidence we can say that "Pony Alpha uses a tokenizer ve
 
 This means it's very likely that the model is a _new model from Zhipu AI_, probably a new GLM model.
 
-Given the pre-announcements that GLM-5 is coming, and the reports from people online that the Pony Alpha outputs have been high quality, its likely Pony Alpha is the upcoming GLM-5.
+Given the pre-announcements that GLM-5 is coming, and the reports from people online that the Pony Alpha outputs have been high quality, it's likely Pony Alpha is the upcoming GLM-5.
