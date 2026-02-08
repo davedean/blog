@@ -4,7 +4,7 @@ title: "Identifying Pony Alpha"
 date: 2026-02-08
 ---
 
-There's a new stealth model on Openrouter! Pony Alpha! 
+There's a new stealth model on [Openrouter](https://openrouter.ai)! [Pony Alpha](https://openrouter.ai/openrouter/pony-alpha)! 
 
 What Openrouter say about it:
 
@@ -19,7 +19,7 @@ I have seen posts online that GLM-5 would be coming in Feb, so I wanted to confi
 
 ## Likely Models
 
-Given that OpenAI just dropped GPT-5.3-codex and Anthropic dropped Opus 4.6, it's unlikely to be another model from them. GLM-5 has been mentioned to be releasing in February, so that needs to be considered as an option. There's also Qwen and Deepseek who haven't released something "big" in a little while. 
+Given that OpenAI just dropped [GPT-5.3-codex](https://openai.com/index/introducing-gpt-5-3-codex/) and Anthropic dropped [Opus 4.6](https://www.anthropic.com/news/claude-opus-4-6), it's unlikely to be another model from them. GLM-5 has been [mentioned](https://x.com/jietang/status/2018246490775498791?s=20) to be releasing in February, so that needs to be considered as an option. There's also [Qwen](https://qwen.ai/home) and [Deepseek](https://www.deepseek.com/en/) who haven't released something "big" in a little while. 
 
 One thing that model providers can't hide easily, and don't tend to change frequently is their tokenizer. So I resolved to quickly check if the tokenizer used by Pony Alpha matched any of the usual suspects.
 
@@ -59,7 +59,7 @@ Luckily, this is available.
 
 ### Local Tokenizer Comparison
 
-Huggingface provides implementations of common tokenizers! So we can tokenize some test prompts locally with tokenizers from the likely model providers, get the token count, and then compare with the token counts that the API provides.
+[Huggingface](https://huggingface.co) provides implementations of common tokenizers! So we can tokenize some test prompts locally with tokenizers from the likely model providers, get the token count, and then compare with the token counts that the API provides.
 
 This will tell us if the reference implementation(s) match the token count from the API, which could be a strong signal they're using the same tokenizer.
 
@@ -98,7 +98,7 @@ Model providers tend to stick to a tokenizer for a long time, and they tend to h
 
 ## Pulling it all together
 
-We can create a simple probe script which will use the API to talk to Pony Alpha, sending test prompts and using the token counts to fingerprint the model, and compare against local tokenizer implementations.
+We can [create a simple probe script](https://gist.github.com/davedean/f0d8bfba10d38526b0d8b881cff0e927) which will use the API to talk to Pony Alpha, sending test prompts and using the token counts to fingerprint the model, and compare against local tokenizer implementations.
 
 After doing that, here's the results! 
 
@@ -149,6 +149,6 @@ The one test that doesn't match with the GLM-4 tokenizer is an emoji string (`ðŸ
 
 With a high degree of confidence we can say that "Pony Alpha uses a tokenizer very similar to GLM-4".
 
-This means it's very likely that the model is a _new model from Zhipu AI_, probably a new GLM model.
+This means it's very likely that the model is a _new model from [Zhipu AI](https://z.ai/chat)_, probably a new GLM model.
 
 Given the pre-announcements that GLM-5 is coming, and the reports from people online that the Pony Alpha outputs have been high quality, it's likely Pony Alpha is the upcoming GLM-5.
